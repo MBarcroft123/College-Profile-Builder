@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     
-    var colleges = ["DePaul", "North Western University", "Illinois State University"]
+    var colleges = ["DePaul University", "North Western University", "Illinois State University"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
         cell.textLabel?.text = colleges[indexPath.row]
         return cell
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            colleges.removeAtIndex(indexPath.row)
+            tableView.reloadData()
+        }
     }
 
 
