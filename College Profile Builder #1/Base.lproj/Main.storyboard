@@ -53,7 +53,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="arm-eB-gCg">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="OTy-JA-B5U"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SLS-wZ-KWM"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SLS-wZ-KWM">
+                            <connections>
+                                <action selector="onTappedPlusButton:" destination="BYZ-38-t0r" id="2uW-lq-GZU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Ifc-Ze-lLz" id="NXV-MA-nOQ"/>
