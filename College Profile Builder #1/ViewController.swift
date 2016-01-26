@@ -12,11 +12,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
     
-    var colleges = ["DePaul University", "North Western University", "Illinois State University"]
+    var colleges : [College] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         editButton.tag = 0
+        
+        colleges.append(College(name: "DePaul University", state: "Illinois", numberOfStudents: 23799, image: UIImage(named: "DePaul")!))
+        colleges.append(College(name: "Northwestern University", state: "Illinois", numberOfStudents: 20336, image: UIImage(named: "Northwestern")!))
+        colleges.append(College(name: "University of Notre Dame", state: "Indiana", numberOfStudents: 12124, image: UIImage(named: "NotreDame")!))
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,8 +28,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
-        cell.textLabel?.text = colleges[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
+        cell.textLabel?.text = colleges[indexPath.row].name
         return cell
     }
     
@@ -37,17 +41,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
 
+    
     @IBAction func onTappedPlusButton(sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Add College", message: nil, preferredStyle: .Alert)
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Add College Here"
         }
+        
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         alert.addAction(cancelAction)
         
         let addAction = UIAlertAction(title: "Add", style: .Default) { (action) -> Void in
             let collegeTextField = alert.textFields![0] as UITextField
-            self.colleges.append(collegeTextField.text!)
+            self.colleges.append(College(name: collegeTextField.text!))
             self.tableView.reloadData()
         }
         alert.addAction(addAction)
@@ -72,7 +78,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             sender.tag = 0
         }
     }
-    
     
         
     }
