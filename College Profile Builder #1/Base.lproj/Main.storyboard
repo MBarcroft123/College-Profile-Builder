@@ -72,6 +72,62 @@
             </objects>
             <point key="canvasLocation" x="1028" y="-392"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="vLH-F7-96R">
+            <objects>
+                <viewController id="c76-SR-vph" customClass="DetailViewController" customModule="College_Profile_Builder__1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M4L-s6-CIQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="GHl-7f-cA2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z8s-ha-2SI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="College" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="42r-E6-1Ch">
+                                <rect key="frame" x="225" y="123" width="150" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LzO-zh-gYD">
+                                <rect key="frame" x="225" y="161" width="150" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Students" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IO7-Zc-l3A">
+                                <rect key="frame" x="225" y="199" width="150" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iGL-Lg-nHa">
+                                <rect key="frame" x="175" y="279" width="250" height="150"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4J-OT-FhE">
+                                <rect key="frame" x="274" y="462" width="52" height="38"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IO7-Zc-l3A" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="VQf-rh-Qml"/>
+                            <constraint firstItem="iGL-Lg-nHa" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="VWf-x9-R8m"/>
+                            <constraint firstItem="e4J-OT-FhE" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="boq-QU-eWk"/>
+                            <constraint firstItem="42r-E6-1Ch" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="ccz-db-P0M"/>
+                            <constraint firstItem="LzO-zh-gYD" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="mXP-8y-qhZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ao0-ss-GXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="-391"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="LU1-Gs-0j2">
             <objects>
