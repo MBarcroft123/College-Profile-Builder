@@ -40,6 +40,9 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="c76-SR-vph" kind="show" id="JZJ-H0-KO1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -70,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="-392"/>
+            <point key="canvasLocation" x="1076" y="-392"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="vLH-F7-96R">
@@ -105,6 +108,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iGL-Lg-nHa">
                                 <rect key="frame" x="175" y="279" width="250" height="150"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="fAQ-0d-5tp"/>
+                                    <constraint firstAttribute="width" constant="250" id="rap-2p-h3M"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4J-OT-FhE">
                                 <rect key="frame" x="274" y="462" width="52" height="38"/>
@@ -155,7 +162,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPI-Ea-630" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="-392"/>
+            <point key="canvasLocation" x="370" y="-392"/>
         </scene>
     </scenes>
 </document>
