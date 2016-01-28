@@ -24,7 +24,6 @@ class College: UIViewController {
         self.numberOfStudents = numberOfStudents
         self.image = image
     }
-    
     convenience init(name: String) {
         self.init()
         self.name = name
