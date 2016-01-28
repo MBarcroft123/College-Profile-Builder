@@ -90,7 +90,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LzO-zh-gYD">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LzO-zh-gYD">
                                 <rect key="frame" x="225" y="161" width="150" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -111,6 +111,10 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onTappedSaveButton:" destination="c76-SR-vph" eventType="touchUpInside" id="3oI-UW-jNE"/>
+                                    <action selector="tappedOnSaveButton:" destination="c76-SR-vph" eventType="touchUpInside" id="BPi-EY-QjK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -123,6 +127,12 @@
                             <constraint firstItem="LzO-zh-gYD" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="mXP-8y-qhZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collegeTextField" destination="42r-E6-1Ch" id="OdS-9q-8Ai"/>
+                        <outlet property="imageView" destination="iGL-Lg-nHa" id="YRi-6i-ATR"/>
+                        <outlet property="locationTextField" destination="LzO-zh-gYD" id="DeV-np-wZr"/>
+                        <outlet property="numberOfStudentsTextField" destination="IO7-Zc-l3A" id="Cvb-Gt-XZZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ao0-ss-GXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

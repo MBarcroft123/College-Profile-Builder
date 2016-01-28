@@ -10,17 +10,17 @@ import UIKit
 
 class College: UIViewController {
     var name = ""
-    var state = ""
+    var location = ""
     var numberOfStudents = 0
     var image = UIImage(named: "Default")
 
     override func viewDidLoad() {
         super.viewDidLoad()
 }
-    convenience init(name: String, state: String, numberOfStudents: Int, image: UIImage) {
+    convenience init(name: String, location: String, numberOfStudents: Int, image: UIImage) {
         self.init()
         self.name = name
-        self.state = state
+        self.location = location
         self.numberOfStudents = numberOfStudents
         self.image = image
     }

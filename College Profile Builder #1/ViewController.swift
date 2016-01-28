@@ -18,9 +18,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         editButton.tag = 0
         
-        colleges.append(College(name: "DePaul University", state: "Illinois", numberOfStudents: 23799, image: UIImage(named: "DePaul")!))
-        colleges.append(College(name: "Northwestern University", state: "Illinois", numberOfStudents: 20336, image: UIImage(named: "Northwestern")!))
-        colleges.append(College(name: "University of Notre Dame", state: "Indiana", numberOfStudents: 12124, image: UIImage(named: "NotreDame")!))
+        colleges.append(College(name: "DePaul University", location: "Illinois", numberOfStudents: 23799, image: UIImage(named: "DePaul")!))
+        colleges.append(College(name: "Northwestern University", location: "Illinois", numberOfStudents: 20336, image: UIImage(named: "Northwestern")!))
+        colleges.append(College(name: "University of Notre Dame", location: "Indiana", numberOfStudents: 12124, image: UIImage(named: "NotreDame")!))
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
