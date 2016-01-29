@@ -17,18 +17,14 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         collegeTextField.text = college.name
         locationTextField.text = college.location
         numberOfStudentsTextField.text = String(college.numberOfStudents)
         imageView.image = college.image
 }
-    
     @IBAction func onTappedSaveButton(sender: UIButton) {
         college.name = collegeTextField.text!
         college.location = locationTextField.text!
         college.numberOfStudents = Int(numberOfStudentsTextField.text!)!
     }
-    
-
 }

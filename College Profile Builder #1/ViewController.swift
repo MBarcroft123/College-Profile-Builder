@@ -17,20 +17,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         editButton.tag = 0
         
-        colleges.append(College(name: "DePaul University", location: "Illinois", numberOfStudents: 23799, image: UIImage(named: "DePaul")!))
-        colleges.append(College(name: "Northwestern University", location: "Illinois", numberOfStudents: 20336, image: UIImage(named: "Northwestern")!))
+        colleges.append(College(name: "DePaul University", location: "Chicago", numberOfStudents: 23799, image: UIImage(named: "DePaul")!))
+        colleges.append(College(name: "Northwestern University", location: "Evanston", numberOfStudents: 20336, image: UIImage(named: "Northwestern")!))
         colleges.append(College(name: "University of Notre Dame", location: "Indiana", numberOfStudents: 12124, image: UIImage(named: "NotreDame")!))
     }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
     }
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colleges.count
     }
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
         cell.textLabel?.text = colleges[indexPath.row].name
@@ -38,7 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete{
+        if editingStyle == .Delete {
             colleges.removeAtIndex(indexPath.row)
             tableView.reloadData()
         }
@@ -49,7 +46,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Add College Here"
         }
-        
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         alert.addAction(cancelAction)
         
@@ -61,16 +57,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)
     }
-    
     func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
-    
     func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
         let college = colleges[sourceIndexPath.row]
         colleges.removeAtIndex(sourceIndexPath.row)
         colleges.insert(college, atIndex: destinationIndexPath.row)
     }
+
     
     @IBAction func onTappedEditButton(sender: UIBarButtonItem) {
         if sender.tag == 0 {

@@ -57,7 +57,7 @@
                     <navigationItem key="navigationItem" id="arm-eB-gCg">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="OTy-JA-B5U">
                             <connections>
-                                <action selector="onTappedEditButton:" destination="BYZ-38-t0r" id="CmO-qy-vIw"/>
+                                <action selector="onTappedEditButton:" destination="BYZ-38-t0r" id="ENW-jp-Hh1"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="SLS-wZ-KWM">
