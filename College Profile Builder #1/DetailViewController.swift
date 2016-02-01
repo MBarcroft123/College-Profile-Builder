@@ -22,7 +22,8 @@ class DetailViewController: UIViewController {
         numberOfStudentsTextField.text = String(college.numberOfStudents)
         imageView.image = college.image
 }
-    @IBAction func onTappedSaveButton(sender: UIButton) {
+ 
+    @IBAction func onTappedOnSaveButton(sender: AnyObject) {
         college.name = collegeTextField.text!
         college.location = locationTextField.text!
         college.numberOfStudents = Int(numberOfStudentsTextField.text!)!

@@ -121,11 +121,12 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4J-OT-FhE">
-                                <rect key="frame" x="274" y="454" width="52" height="38"/>
+                                <rect key="frame" x="273" y="464" width="38" height="24"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
+                                    <action selector="onTappedOnSaveButton:" destination="c76-SR-vph" eventType="touchUpInside" id="wrP-mR-Fps"/>
                                     <action selector="onTappedSaveButton:" destination="c76-SR-vph" eventType="touchUpInside" id="3oI-UW-jNE"/>
                                     <action selector="tappedOnSaveButton:" destination="c76-SR-vph" eventType="touchUpInside" id="BPi-EY-QjK"/>
                                 </connections>
