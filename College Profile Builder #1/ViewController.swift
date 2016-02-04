@@ -5,10 +5,10 @@
 //  Created by Student on 1/20/16.
 //  Copyright © 2016 The Coolest Guy Around. All rights reserved.
 //
-
+import SafariServices
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, SFSafariViewControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
     var colleges : [College] = []
@@ -17,9 +17,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         editButton.tag = 0
         
-        colleges.append(College(name: "DePaul University", location: "Chicago", numberOfStudents: 23799, image: UIImage(named: "DePaul")!))
-        colleges.append(College(name: "Northwestern University", location: "Evanston", numberOfStudents: 20336, image: UIImage(named: "Northwestern")!))
-        colleges.append(College(name: "University of Notre Dame", location: "Indiana", numberOfStudents: 12124, image: UIImage(named: "NotreDame")!))
+        colleges.append(College(name: "DePaul University", location: "Chicago, Illinois", numberOfStudents: 23799, image: UIImage(named: "DePaul")!, webUrl: "https://www.nd.edu/"))
+        colleges.append(College(name: "Northwestern University", location: "Evanston, Illinois", numberOfStudents: 20336, image: UIImage(named: "Northwestern")!, webUrl: "https://www.nd.edu/"))
+        colleges.append(College(name: "University of Notre Dame", location: "Notre Dame, Indiana", numberOfStudents: 12124, image: UIImage(named: "NotreDame")!, webUrl: "https://www.nd.edu/"))
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)

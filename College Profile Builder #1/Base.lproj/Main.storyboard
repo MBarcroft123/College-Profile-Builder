@@ -121,25 +121,39 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4J-OT-FhE">
-                                <rect key="frame" x="273" y="464" width="38" height="24"/>
+                                <rect key="frame" x="281" y="463" width="38" height="24"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="onTappedOnSaveButton:" destination="c76-SR-vph" eventType="touchUpInside" id="wrP-mR-Fps"/>
-                                    <action selector="onTappedSaveButton:" destination="c76-SR-vph" eventType="touchUpInside" id="3oI-UW-jNE"/>
-                                    <action selector="tappedOnSaveButton:" destination="c76-SR-vph" eventType="touchUpInside" id="BPi-EY-QjK"/>
+                                    <action selector="tappedOnSaveButton:" destination="c76-SR-vph" eventType="touchUpInside" id="vLe-R3-c0p"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vsI-pt-y83">
+                                <rect key="frame" x="225" y="241" width="150" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3J6-9G-CZw">
+                                <rect key="frame" x="415" y="240" width="101" height="32"/>
+                                <animations/>
+                                <state key="normal" title="Go to Website"/>
+                                <connections>
+                                    <action selector="tappedOnWebPageButton:" destination="c76-SR-vph" eventType="touchUpInside" id="V0f-oB-abm"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3J6-9G-CZw" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" constant="165.5" id="O8j-Lr-D0E"/>
                             <constraint firstItem="IO7-Zc-l3A" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="VQf-rh-Qml"/>
                             <constraint firstItem="iGL-Lg-nHa" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="VWf-x9-R8m"/>
                             <constraint firstItem="e4J-OT-FhE" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="boq-QU-eWk"/>
                             <constraint firstItem="42r-E6-1Ch" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="ccz-db-P0M"/>
                             <constraint firstItem="LzO-zh-gYD" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="mXP-8y-qhZ"/>
+                            <constraint firstItem="vsI-pt-y83" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="rK4-UV-h2q"/>
                         </constraints>
                     </view>
                     <connections>
@@ -147,6 +161,7 @@
                         <outlet property="imageView" destination="iGL-Lg-nHa" id="YRi-6i-ATR"/>
                         <outlet property="locationTextField" destination="LzO-zh-gYD" id="DeV-np-wZr"/>
                         <outlet property="numberOfStudentsTextField" destination="IO7-Zc-l3A" id="Cvb-Gt-XZZ"/>
+                        <outlet property="webUrlTextfield" destination="vsI-pt-y83" id="FKQ-2q-cjq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ao0-ss-GXr" userLabel="First Responder" sceneMemberID="firstResponder"/>

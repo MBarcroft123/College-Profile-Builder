@@ -13,16 +13,18 @@ class College: UIViewController {
     var location = ""
     var numberOfStudents = 0
     var image = UIImage(named: "Default")
+    var webUrl = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 }
-    convenience init(name: String, location: String, numberOfStudents: Int, image: UIImage) {
+    convenience init(name: String, location: String, numberOfStudents: Int, image: UIImage, webUrl: String) {
         self.init()
         self.name = name
         self.location = location
         self.numberOfStudents = numberOfStudents
         self.image = image
+        self.webUrl = webUrl
     }
     convenience init(name: String) {
         self.init()
