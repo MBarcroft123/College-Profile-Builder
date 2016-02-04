@@ -121,7 +121,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4J-OT-FhE">
-                                <rect key="frame" x="281" y="463" width="38" height="24"/>
+                                <rect key="frame" x="281" y="475" width="38" height="24"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Save"/>
@@ -136,20 +136,30 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3J6-9G-CZw">
-                                <rect key="frame" x="415" y="240" width="101" height="32"/>
+                                <rect key="frame" x="125" y="437" width="101" height="32"/>
                                 <animations/>
                                 <state key="normal" title="Go to Website"/>
                                 <connections>
                                     <action selector="tappedOnWebPageButton:" destination="c76-SR-vph" eventType="touchUpInside" id="V0f-oB-abm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPt-BD-ynw">
+                                <rect key="frame" x="410" y="433" width="59" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Library"/>
+                                <connections>
+                                    <action selector="onLibraryButtonTap:" destination="c76-SR-vph" eventType="touchUpInside" id="L04-Ho-8V5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3J6-9G-CZw" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" constant="165.5" id="O8j-Lr-D0E"/>
+                            <constraint firstItem="hPt-BD-ynw" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" constant="139.5" id="0UH-hn-BHL"/>
                             <constraint firstItem="IO7-Zc-l3A" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="VQf-rh-Qml"/>
                             <constraint firstItem="iGL-Lg-nHa" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="VWf-x9-R8m"/>
+                            <constraint firstItem="3J6-9G-CZw" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" constant="-124.5" id="YI7-rR-IWs"/>
                             <constraint firstItem="e4J-OT-FhE" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="boq-QU-eWk"/>
                             <constraint firstItem="42r-E6-1Ch" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="ccz-db-P0M"/>
                             <constraint firstItem="LzO-zh-gYD" firstAttribute="centerX" secondItem="Z8s-ha-2SI" secondAttribute="centerX" id="mXP-8y-qhZ"/>
