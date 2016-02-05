@@ -53,16 +53,12 @@ class DetailViewController: UIViewController, SFSafariViewControllerDelegate, UI
             let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
             self.imageView.image = selectedImage
         }
-        
     }
 
     @IBAction func onLibraryButtonTap(sender: AnyObject) {
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         presentViewController(imagePicker, animated: true, completion: nil)
     }
-
-  
-   
     }
 
     

@@ -30,6 +30,4 @@ class College: UIViewController {
         self.init()
         self.name = name
     }
-
-
 }
