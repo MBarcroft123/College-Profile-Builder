@@ -33,7 +33,7 @@ class DetailViewController: UIViewController, SFSafariViewControllerDelegate, UI
         college.location = locationTextField.text!
         college.numberOfStudents = Int(numberOfStudentsTextField.text!)!
         college.webUrl = webUrlTextfield.text!
-        
+        college.image = imageView.image
     }
     
     
