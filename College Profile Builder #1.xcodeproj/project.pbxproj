@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F072B521C5804880029A956 /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F072B511C5804880029A956 /* College.swift */; settings = {ASSET_TAGS = (); }; };
 		3F072B541C593D8A0029A956 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F072B531C593D8A0029A956 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3F62F6FC1C73A0A70040037D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62F6FB1C73A0A70040037D /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3F812B711C4FFD5200281332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F812B701C4FFD5200281332 /* AppDelegate.swift */; };
 		3F812B731C4FFD5200281332 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F812B721C4FFD5200281332 /* ViewController.swift */; };
 		3F812B761C4FFD5200281332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F812B741C4FFD5200281332 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		3F072B511C5804880029A956 /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
 		3F072B531C593D8A0029A956 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3F62F6FB1C73A0A70040037D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3F812B6D1C4FFD5100281332 /* College Profile Builder #1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "College Profile Builder #1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F812B701C4FFD5200281332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F812B721C4FFD5200281332 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				3F072B531C593D8A0029A956 /* DetailViewController.swift */,
 				3F072B511C5804880029A956 /* College.swift */,
 				3F812B741C4FFD5200281332 /* Main.storyboard */,
+				3F62F6FB1C73A0A70040037D /* MapViewController.swift */,
 				3F812B771C4FFD5200281332 /* Assets.xcassets */,
 				3F812B791C4FFD5200281332 /* LaunchScreen.storyboard */,
 				3F812B7C1C4FFD5200281332 /* Info.plist */,
@@ -275,6 +278,7 @@
 				3F812B731C4FFD5200281332 /* ViewController.swift in Sources */,
 				3F812B711C4FFD5200281332 /* AppDelegate.swift in Sources */,
 				3F072B521C5804880029A956 /* College.swift in Sources */,
+				3F62F6FC1C73A0A70040037D /* MapViewController.swift in Sources */,
 				3F072B541C593D8A0029A956 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
