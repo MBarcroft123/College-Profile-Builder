@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var mapView: MKMapView!
+    var college : College!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func DoneButtonPressed(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
     
 
 }

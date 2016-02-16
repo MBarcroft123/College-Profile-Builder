@@ -199,10 +199,39 @@
                     <view key="view" contentMode="scaleToFill" id="VWa-rI-uKB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZBv-Lc-x0a">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <animations/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dx2-zP-rS7">
+                                <rect key="frame" x="226" y="101" width="149" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bum-c4-4ff" firstAttribute="top" secondItem="ZBv-Lc-x0a" secondAttribute="bottom" id="3ih-V5-gjw"/>
+                            <constraint firstItem="dx2-zP-rS7" firstAttribute="centerX" secondItem="VWa-rI-uKB" secondAttribute="centerX" id="4ta-Vv-Zfr"/>
+                            <constraint firstItem="ZBv-Lc-x0a" firstAttribute="top" secondItem="3d9-mV-bFj" secondAttribute="bottom" id="Br7-g0-ZQH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZBv-Lc-x0a" secondAttribute="trailing" constant="-20" id="fZk-tf-pnm"/>
+                            <constraint firstItem="ZBv-Lc-x0a" firstAttribute="leading" secondItem="VWa-rI-uKB" secondAttribute="leadingMargin" constant="-20" id="fql-lk-U51"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="sZB-e4-69p"/>
+                    <navigationItem key="navigationItem" id="sZB-e4-69p">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="ugT-5l-08J">
+                            <connections>
+                                <action selector="DoneButtonPressed:" destination="vy5-KD-Wny" id="4IR-zW-FAR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="ZBv-Lc-x0a" id="EWE-tw-ebf"/>
+                        <outlet property="textField" destination="dx2-zP-rS7" id="m0y-AC-YWI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xH-ja-eZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
