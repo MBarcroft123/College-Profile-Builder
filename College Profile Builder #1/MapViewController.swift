@@ -15,11 +15,12 @@ class MapViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var mapView: MKMapView!
     var college : College!
     
+    var location = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField.text = college.location
         textField.delegate = self
-        findLocation(college.location)
+        findLocation(location)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -71,22 +72,6 @@ class MapViewController: UIViewController, UITextFieldDelegate {
         pin.title = placemark.name
         mapView.addAnnotation(pin)
         mapView.setRegion(region, animated: true)
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    @IBAction func DoneButtonPressed(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
     }
     
     
